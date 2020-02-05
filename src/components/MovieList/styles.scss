@@ -1,0 +1,37 @@
+.movie-list {
+  margin-top: 32px;
+  
+  .poster-card-list {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+    .poster-card {
+      display: flex;
+      flex-direction: column;
+      width: calc(25% - 16px);
+      margin: 8px;
+
+      a {
+        text-decoration: none;
+        color: #000;
+        &:hover {
+          color: #ff5757;
+        }
+      }
+
+      .poster-img {
+        height: 300px;
+      }
+
+      @media (max-width: 1023px) {
+        width: calc(33.3% - 16px);
+        margin: 8px;
+      }
+      @media (max-width: 767px) {
+          width: calc(50% - 8px);
+          margin: 4px;
+      }
+    }
+  }
+}
